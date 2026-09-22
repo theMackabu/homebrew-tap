@@ -1,0 +1,62 @@
+{
+  "stable": {
+    "darwin-aarch64": {
+      "version": "15.1.6aee72e4.0",
+      "build_timestamp": 1789321204,
+      "revision": "6aee72e449cd8426753841e6bd2c599103e81b4d",
+      "download_url": "https://manifest.antjs.org/v1/download/ant/darwin-aarch64?branch=master&run_id=34772277484",
+      "sha256": "25e9d0af12ac4bfbb19a4072515c9e007fcb1da2afa84a5bb37a2d7b297786fd"
+    },
+    "darwin-x64": {
+      "version": "15.1.6aee72e4.0",
+      "build_timestamp": 1789321204,
+      "revision": "6aee72e449cd8426753841e6bd2c599103e81b4d",
+      "download_url": "https://manifest.antjs.org/v1/download/ant/darwin-x64?branch=master&run_id=34772277484",
+      "sha256": "aca3bebdfbb3fc9408fd8434b9ad3925523f8f157600d4ac47a187ff740dfc58"
+    },
+    "linux-aarch64": {
+      "version": "15.1.6aee72e4.0",
+      "build_timestamp": 1789321204,
+      "revision": "6aee72e449cd8426753841e6bd2c599103e81b4d",
+      "download_url": "https://manifest.antjs.org/v1/download/ant/linux-aarch64?branch=master&run_id=34772277484",
+      "sha256": "7daef70ea3a1922da3f76144abd312c1bc4c5f30601999def850d4cf3a4695dc"
+    },
+    "linux-x64": {
+      "version": "15.1.6aee72e4.0",
+      "build_timestamp": 1789321204,
+      "revision": "6aee72e449cd8426753841e6bd2c599103e81b4d",
+      "download_url": "https://manifest.antjs.org/v1/download/ant/linux-x64?branch=master&run_id=34772277484",
+      "sha256": "2cf16e808f7590d7eb795d5f9abe0441cf427a3d98210c333b70d853071c4f69"
+    }
+  },
+  "canary": {
+    "darwin-aarch64": {
+      "version": "15.1.f60e5e0e.1",
+      "build_timestamp": 1789544675,
+      "revision": "f60e5e0e99263ba7781a01258125fee5ec2af67c",
+      "download_url": "https://manifest.antjs.org/v1/download/ant/darwin-aarch64?branch=master&run_id=35070078789",
+      "sha256": "c5ee903f5b4a315ddda74f4be0517465723b70aadc50e7b5adb2efe8d83f6d1e"
+    },
+    "darwin-x64": {
+      "version": "15.1.f60e5e0e.1",
+      "build_timestamp": 1789544675,
+      "revision": "f60e5e0e99263ba7781a01258125fee5ec2af67c",
+      "download_url": "https://manifest.antjs.org/v1/download/ant/darwin-x64?branch=master&run_id=35070078789",
+      "sha256": "9fb80eaf4592a8eb487b544dd871a437414ff0aa9a592c81587b91f4c725bc76"
+    },
+    "linux-aarch64": {
+      "version": "15.1.f60e5e0e.1",
+      "build_timestamp": 1789544675,
+      "revision": "f60e5e0e99263ba7781a01258125fee5ec2af67c",
+      "download_url": "https://manifest.antjs.org/v1/download/ant/linux-aarch64?branch=master&run_id=35070078789",
+      "sha256": "e5b7257ffadbd6d5aff018b8b0ace2eb45ffd3e4fd175b5cd6108deea0f4c30a"
+    },
+    "linux-x64": {
+      "version": "15.1.f60e5e0e.1",
+      "build_timestamp": 1789544675,
+      "revision": "f60e5e0e99263ba7781a01258125fee5ec2af67c",
+      "download_url": "https://manifest.antjs.org/v1/download/ant/linux-x64?branch=master&run_id=35070078789",
+      "sha256": "2837b941c57276def70a1b079d9e8bec23d2ee2df297cf400cacfec36dc500fd"
+    }
+  }
+}

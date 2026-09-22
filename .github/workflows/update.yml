@@ -1,0 +1,40 @@
+name: update pinned release manifest
+
+on:
+  schedule:
+    - cron: "23 * * * *"
+  workflow_dispatch:
+  repository_dispatch:
+    types: [ant-release]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-ant
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: "3.13"
+      - name: update formulae from the manifest
+        run: python3 scripts/update.py
+      - name: Check Ruby syntax
+        run: |
+          ruby -c Formula/ant.rb
+          ruby -c Formula/ant-nightly.rb
+      - name: Commit updates
+        run: |
+          git add Formula manifest-lock.json
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'update Ant from release manifest'
+          git push
